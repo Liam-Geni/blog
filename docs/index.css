@@ -1,0 +1,128 @@
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+}
+@font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff');
+}
+
+/* 노멀라이즈 */
+body, ul, li{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+a{
+  text-decoration:none;
+  color:inherit;
+}
+/* 노멀라이즈 끝 */
+
+/* 라이브러리 */
+.inline-grid{
+  font-size:0;
+}
+.inline-grid > *{
+  font-size: 1rem;
+  vertical-align:top;
+  display:inline-block;
+  box-sizing: border-box;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.block{
+  display:block;
+}
+.con {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* 라이브러리 끝 */
+
+html{
+    font-family:'Roboto', 'LotteMartDream', sans-serif;
+}
+
+.con {
+  width: 1200px;
+}
+
+.top-bar{
+  background-color:#232323;
+  color:white;
+}
+
+.top-bar > .con > div:first-child{
+  width: 240px;
+}
+
+.top-bar > .con > div:nth-child(2){
+
+  width:calc(100% - 240px - 700px);
+}
+
+.top-bar > .con > div:last-child{
+  width:700px;
+}
+.top-bar__logo{
+  font-weight:bold;
+  font-size: 1.3rem;
+  padding:20px;
+}
+.top-bar__menu-box-1 > ul > li{
+  font-size: 1.2rem;
+  position:relative;
+}
+
+.top-bar__menu-box-1 > ul > li > a{
+  padding: 22.5px 30px;
+}
+
+.top-bar__menu-box-1 > ul ul > li > a{
+  padding: 22.5px;
+  text-align:center;
+}
+.top-bar__menu-box-1  ul > li > a{
+  display:block;
+  white-space:nowrap;
+}
+.top-bar__menu-box-1  ul > li:hover > a{
+  background-color: white;
+  color: black;
+}
+
+
+.top-bar__menu-box-1 > ul > li > ul{
+  background-color:#232323;
+  display:none;
+  position:absolute;
+  width:100%;
+  top:100%;
+  left:0;
+}
+
+.top-bar__menu-box-1 > ul > li:hover > ul{
+  display:block;
+}
+
